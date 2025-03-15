@@ -38,3 +38,5 @@ const obj = "vipul";
 const url = "https://localhost:3000";
 // console.log(url.replace('s','r'));
 console.log(url.indexOf('s'));
+const object = "vipul";
+console.log(object.toUpperCase());
