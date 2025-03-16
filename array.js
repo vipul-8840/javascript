@@ -25,3 +25,10 @@
 
 // const newArr = [...arr,...arr1]
 // console.log(newArr);
+console.log(Array.isArray({name:"vipul"}))
+const arr = Array.from("vipul");
+console.log(arr);
+
+const a = 2;
+const b = 3;
+console.log(Array.of(a,b));
