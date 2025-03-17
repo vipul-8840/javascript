@@ -16,8 +16,12 @@
 // {
 //     console.log("truthy values ");
 // }
-const obj = {};
-if(Object.keys(obj).length==0)
-{
-    console.log('empty length')
-}
+// const obj = {};
+// if(Object.keys(obj).length==0)
+// {
+//     console.log('empty length')
+// }
+let val ;
+// val = 5??10;
+val = null??5;
+console.log(val);
