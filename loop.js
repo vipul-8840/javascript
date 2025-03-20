@@ -111,3 +111,13 @@ const obj ={
 
 // const value = arr.map((num)=>num+10);
 // console.log(value);
+         //---------Reducer-----
+         const arr = [1,2,3];
+        //  const values=arr.reduce(function(acc,curr){
+        //     console.log(`acc is ${acc} & currVal is ${curr}`);
+        //     return acc+curr;
+
+        //  },5);
+        //  console.log(values);
+        const val = arr.reduce((acc,curr)=>acc +curr,5);
+        console.log(val);
