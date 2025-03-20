@@ -97,3 +97,17 @@ const obj ={
 // })
 // console.log(arr);
 // console.log(nums);
+// const arr =  [1,2,2,3,3,4,4];
+// let xors =0;
+// for(let i=0;i<arr.length;i++)
+// {
+//     xors^=arr[i];
+
+// }
+// console.log(xors);
+        //   ...map...
+
+// const arr = [1,2,3];
+
+// const value = arr.map((num)=>num+10);
+// console.log(value);
