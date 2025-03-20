@@ -90,10 +90,10 @@ const obj ={
 //     console.log(item["name"]);
 // })
 
-const nums = [1,2,3,4,5,6,7,8];
+// const nums = [1,2,3,4,5,6,7,8];
 // const arr = nums.filter((num)=>num>4);
-const arr = nums.filter((nums)=>{
-    return nums>4;
-})
-console.log(arr);
+// const arr = nums.filter((nums)=>{
+//     return nums>4;
+// })
+// console.log(arr);
 // console.log(nums);
