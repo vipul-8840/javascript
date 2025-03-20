@@ -44,17 +44,48 @@ const obj ={
 // {
 //     console.log(key);
 // }
-for(const key in obj)
-{
-    console.log(obj[key]);
-    // console.log(key);
-}
-const arr = [1,2,3,4,5];
-for(const num of arr)
-{
-    console.log(num);
-}
-for(const num in arr )
-{
-    console.log(num);
-}
+// for(const key in obj)
+// {
+//     console.log(obj[key]);
+//     // console.log(key);
+// }
+// const arr = [1,2,3,4,5];
+// for(const num of arr)
+// {
+//     console.log(num);
+// }
+// for(const num in arr )
+// {
+//     console.log(num);
+// }
+
+// for each loop 
+// const arr = [1,2,3,4,5];
+// arr.forEach((item)=>{
+//     console.log(`number is ${item}`);
+// })
+
+// function printMe(item)
+// {
+//     console.log(item);
+// }
+// arr.forEach(printMe);
+
+const arr = [
+    {
+        name:"vipul",
+        age : 23
+    },
+    {
+        name:"prashant",
+        age :24
+    },
+    {
+        name:"abhi",
+        age:24
+    }
+]
+
+arr.forEach((item)=>{
+    console.log(item["name"]);
+})
