@@ -54,4 +54,7 @@ for(const num of arr)
 {
     console.log(num);
 }
-for(const )
+for(const num in arr )
+{
+    console.log(num);
+}
