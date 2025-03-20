@@ -71,21 +71,29 @@ const obj ={
 // }
 // arr.forEach(printMe);
 
-const arr = [
-    {
-        name:"vipul",
-        age : 23
-    },
-    {
-        name:"prashant",
-        age :24
-    },
-    {
-        name:"abhi",
-        age:24
-    }
-]
+// const arr = [
+//     {
+//         name:"vipul",
+//         age : 23
+//     },
+//     {
+//         name:"prashant",
+//         age :24
+//     },
+//     {
+//         name:"abhi",
+//         age:24
+//     }
+// ]
 
-arr.forEach((item)=>{
-    console.log(item["name"]);
+// arr.forEach((item)=>{
+//     console.log(item["name"]);
+// })
+
+const nums = [1,2,3,4,5,6,7,8];
+// const arr = nums.filter((num)=>num>4);
+const arr = nums.filter((nums)=>{
+    return nums>4;
 })
+console.log(arr);
+// console.log(nums);
