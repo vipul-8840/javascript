@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure full screen height */
+            margin: 0; /* Remove default margin */
+            flex-direction: column;
+        }
+
+        .square {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align the buttons */
+        }
+
+        .button {
+            margin: 10px;
+            padding: 40px 40px;
+            border: 1px solid #212121;
+            display: inline-block;
+        }
+
+        #grey { background-color: gray; }
+        #white { background-color: white; }
+        #blue { background-color: blue; }
+        #yellow { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <div class="square">
+        <h1>Color Switcher</h1>
+        <div>
+            <span class="button" id="grey"></span>
+            <span class="button" id="white"></span>
+            <span class="button" id="blue"></span>
+            <span class="button" id="yellow"></span>
+        </div>
+        <h2>Try to clicking one of the colors above to change the background color</h2>
+    </div>
+</body>
+<script src="project.js">
+     
+</script>
+</html>
