@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div id="text">0</div>
+     <button id="start">start</button>
+     <button id="stop">stop</button>
+</body>
+  <script>
+    //    setTimeout(()=>{
+    //        console.log("I am the Beast");
+    //    },1000)
+    //     function changeText()
+    //     {
+    //          document.getElementById('text').innerHTML="this is vipul course";
+    //     }
+    //    const changeMe = setTimeout(changeText,2000);
+    //    document.getElementById("stop").addEventListener(
+    //     'click',()=>{
+    //          clearTimeout(changeMe);
+    //          console.log('stopped');
+    //     }
+    //    )
+
+    let count = 0;
+    let interval;
+     function Increment()
+     {
+        count++;
+        document.getElementById('text').innerHTML= `${count}`;
+     }
+     document.getElementById('start').addEventListener
+     ('click',()=>{
+         interval = setInterval(Increment,1000);
+        console.log(interval);
+     })
+     document.getElementById('stop').addEventListener
+     ('click',()=>{
+        console.log(interval);
+         clearInterval(interval);
+         console.log(interval);
+
+         count = 0;
+         document.getElementById('text').innerHTML= `${count}`;
+
+     })
+ 
+     
+  </script>
+</html>
