@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>events</title>
-</head>
-<body>
+</head> -->
+<!-- <body>
       <div>
           <ul id = "images">
              <li >
@@ -16,14 +16,14 @@
              </li>
           </ul>
       </div>
-</body>
+</body> -->
 
-   <script>
-         document.getElementById('images').addEventListener('click',function(e){
-               // console.log(e);
-               console.log(" unordred list")
-            }
-         ,true);
+   <!-- <script>
+         document.getElementById('images').addEventListener('click',function(e){ -->
+               <!-- // console.log(e);
+         //       console.log(" unordred list") -->
+         
+         <!-- // ,true);
          document.getElementById('owl').addEventListener('click',function(e){
                // console.log(e);
                console.log("list");
@@ -31,4 +31,48 @@
             }
          ,true);
    </script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Event Bubbling</title>
+   <style>
+        div {
+            padding: 40px;
+            border: 1px solid black;
+        }
+   </style>
+</head>
+<body>
+     <div id="grands">
+         <button>Button 3</button>
+          <div id="parent">
+              <button>Button 2</button>
+              <div id="child">
+                  <button>Button 1</button>
+              </div>
+          </div>
+     </div>
+</body>
+<script>
+   console.log("hello world")
+        document.getElementById("grands").addEventListener
+        ('click', function(e){
+            console.log("grands clicked");
+        });
+
+        document.getElementById("parent").addEventListener
+        ('click', function(e){
+            console.log("parent clicked");
+        });
+
+        document.getElementById("child").addEventListener
+        ('click', function(event){
+            console.log("child clicked");
+            // event.stopPropagation(); // Uncomment this to prevent bubbling
+        });
+</script>
 </html>
