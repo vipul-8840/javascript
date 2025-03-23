@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+      <div>
+          <ul id = "images">
+             <li >
+              <img id="owl" src="https://media.istockphoto.com/id/1323187200/photo/spotted-owlet.jpg?s=612x612&w=0&k=20&c=Y0103wykL7LJBhBNUi2HH3uNlCuRZ3I2xVrZcUgryt4=" alt="owl">
+             </li>
+             <li>
+                <img src="https://i.pinimg.com/236x/69/bd/d2/69bdd272a35e49f9c36ebc5320f0d63b.jpg" alt="mahadev">
+             </li>
+          </ul>
+      </div>
+</body>
+
+   <script>
+         document.getElementById('images').addEventListener('click',function(e){
+               // console.log(e);
+               console.log(" unordred list")
+            }
+         ,true);
+         document.getElementById('owl').addEventListener('click',function(e){
+               // console.log(e);
+               console.log("list");
+               // e.stopPropagation();
+            }
+         ,true);
+   </script>
+</html>
