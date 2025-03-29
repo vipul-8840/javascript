@@ -36,30 +36,57 @@
 // })
 
 // promise.allSettled()
-const p1 = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-       //    resolve('hey vipul')
-       reject("thorw errr");
+// const p1 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//        //    resolve('hey vipul')
+//        reject("thorw errr");
 
-    },1000);
-})
-const p2 = new Promise((resolve,reject)=>{
-   setTimeout(()=>{
-         resolve('hii aaina')
-   },2000)
-})
-const p3 = new Promise((resolve,reject)=>{
-   setTimeout(()=>{
-         resolve('how are you')
-   },3000);
-})
-console.log(new Date().toLocaleTimeString());
-Promise.allSettled([p1,p2,p3])
-.then((val)=>
-{ console.log(new Date().toLocaleTimeString());
-   console.log(val);
-})
-.catch((err)=>{
-   console.log(new Date().toLocaleTimeString());
-   console.log(err);
-})
+//     },1000);
+// })
+// const p2 = new Promise((resolve,reject)=>{
+//    setTimeout(()=>{
+//          resolve('hii aaina')
+//    },2000)
+// })
+// const p3 = new Promise((resolve,reject)=>{
+//    setTimeout(()=>{
+//          resolve('how are you')
+//    },3000);
+// })
+// console.log(new Date().toLocaleTimeString());
+// Promise.allSettled([p1,p2,p3])
+// .then((val)=>
+// { console.log(new Date().toLocaleTimeString());
+//    console.log(val);
+// })
+// .catch((err)=>{
+//    console.log(new Date().toLocaleTimeString());
+//    console.log(err);
+// })
+// console.log(new Date().toLocaleTimeString());
+// const p1 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         // resolve("first is faster other two promise");
+//         reject("errors promise get rejected")
+//     },2000);
+// })
+// const p2 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         reject("second is faster other two promise");
+//     },3000);
+// })
+// const p3 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         resolve("third is faster other two promise");
+//     },5000);
+// })
+
+// Promise.race([p1,p2,p3])
+// .then((res)=>{
+//     console.log(new Date().toLocaleTimeString());
+//     console.log(res);
+// })
+// .catch((err)=>{
+//     console.log(new Date().toLocaleTimeString());
+//     console.log(err);
+// })
