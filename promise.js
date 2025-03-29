@@ -72,18 +72,54 @@
 
 
 
-  const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("vipul world");
-      resolve();  // Now, the Promise is resolved after 1 second
-    }, 1000);
-  });
+  // const promise = new Promise((resolve, reject) => {
+  //   setTimeout(() => {
+  //     console.log("vipul world");
+  //     resolve();  // Now, the Promise is resolved after 1 second
+  //   }, 1000);
+  // });
   
-  promise.then(() => {
-    console.log("Promise resolved!");  // This will run AFTER "vipul world"
-  });
+  // promise.then(() => {
+  //   console.log("Promise resolved!");  // This will run AFTER "vipul world"
+  // });
   
-  setTimeout(() => {
-    console.log("hello world");
-  }, 1*1000);
+  // setTimeout(() => {
+  //   console.log("hello world");
+  // }, 1*1000);
+  
+  const cart =['shoes','pant','keyboard'];
+  let promise = createOrder(cart);
+  console.log(promise);
+ 
+
+  function createOrder(cart)
+  {
+       const pr = new Promise((resolve,rejcet)=>
+      {
+             if(!validateCart(cart))
+             {
+                  const err= new Error('cart is not valid');
+                  rejcet(err);
+             }
+             else{
+                 const orderId = '1234';
+                 setTimeout(() => {
+                     resolve(orderId);
+                 }, 2000);
+             }
+      })
+    return pr;
+  }
+  function validateCart(cart)
+  {
+    return true;
+  }
+
+  promise.
+  then((orderId)=>{
+       console.log(orderId);
+  }).
+  catch((err)=>{
+      console.log(err);
+  })
   
