@@ -6,16 +6,38 @@
 // const data = print();
 // console.log(data);
 
-const promise = new Promise((resolve,reject)=>{
-     setTimeout(()=>{
-        resolve("hello world")
-     },2000);
-})
+// const promise = new Promise((resolve,reject)=>{
+//      setTimeout(()=>{
+//         resolve("hello world")
+//      },2000);
+// })
 
-async function print()
+// async function print()
+// {
+//     return promise;
+// }
+// const data = print();
+// console.log(data);
+// data.then((res)=>console.log(res));
+
+const promise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+       resolve("hello world")
+    },2000);
+})
+// async function print()
+// {
+//      const pr = await promise;
+//      console.log(pr);
+
+// }
+function printData()
 {
-    return promise;
+   promise.then((res)=>{
+    console.log(res)
+   })
+   console.log("handled prmoise ")
 }
-const data = print();
-console.log(data);
-data.then((res)=>console.log(res));
+printData();
+// print();
+// console.log("vipul");
