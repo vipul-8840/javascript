@@ -71,7 +71,6 @@
   // },1000)
 
 
-
   // const promise = new Promise((resolve, reject) => {
   //   setTimeout(() => {
   //     console.log("vipul world");
@@ -87,39 +86,49 @@
   //   console.log("hello world");
   // }, 1*1000);
   
-  const cart =['shoes','pant','keyboard'];
-  let promise = createOrder(cart);
-  console.log(promise);
  
+  const cart = ['pant','watch','shoes'];
+  createOrder(cart)
+  .then((orderId)=>{
+    console.log(orderId);
+    return orderId;
+  })
+  .then((orderId)=>{
+   return  proceedToPayment(orderId);
+  })
+  .then((paymentInfo)=>{
+      console.log(paymentInfo);
+  })
+  .catch((err)=>{
+      console.log(err);
+  })
 
   function createOrder(cart)
   {
-       const pr = new Promise((resolve,rejcet)=>
-      {
-             if(!validateCart(cart))
-             {
-                  const err= new Error('cart is not valid');
-                  rejcet(err);
-             }
-             else{
-                 const orderId = '1234';
-                 setTimeout(() => {
-                     resolve(orderId);
-                 }, 2000);
-             }
-      })
+    const pr = new Promise((resolve,reject)=>{
+            if(!validCart(cart))
+            {
+                setTimeout(()=>{
+                   const err = new Error("cart is not valid");
+                   reject(err);
+                },2000)
+            }
+            else{
+              const orderId ='123';
+              setTimeout(()=>{
+                  resolve(orderId);
+              },2000)
+            }
+    })
     return pr;
   }
-  function validateCart(cart)
-  {
-    return true;
+  function proceedToPayment(orderId){
+      return new Promise((resolve,reject)=>{
+              setTimeout(()=>{
+                  resolve("payment is successfull");
+              },2000);
+      })
   }
-
-  promise.
-  then((orderId)=>{
-       console.log(orderId);
-  }).
-  catch((err)=>{
-      console.log(err);
-  })
-  
+  function validCart(cart){
+      return true;
+  }
