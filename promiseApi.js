@@ -90,3 +90,32 @@
 //     console.log(new Date().toLocaleTimeString());
 //     console.log(err);
 // })
+
+
+
+// })
+
+const p1 = new Promise((resolve,reject)=>{
+         setTimeout(()=>{
+            //  resolve("first promise get resolved");
+             reject("first promise get rejected");
+         },1000);
+})
+const p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        // resolve("second promise get resolved");
+        reject("second promise get rejected");
+    },1000);
+})
+const p3 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        // resolve("third promise get resolved");
+        reject("third promise get rejected");
+    },1000);
+})
+console.log(new Date().toLocaleTimeString());
+Promise.any([p1,p2,p3])
+.then((val)=>{
+    console.log(new Date().toLocaleTimeString());
+    console.log(val)
+})
