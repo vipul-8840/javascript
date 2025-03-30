@@ -40,6 +40,15 @@ This folder contains various JavaScript files demonstrating different concepts, 
 12. **arrow.js**  
     Demonstrates arrow functions, their syntax, and behavior with the `this` keyword.
 
+13. **promise.js**  
+    Introduces the concept of Promises in JavaScript, including examples of `Promise.resolve`, `Promise.reject`, `Promise.all`, `Promise.race`, and chaining `.then`, `.catch`, and `.finally`.
+
+14. **promiseApi.js**  
+    Demonstrates advanced Promise APIs such as `Promise.all`, `Promise.allSettled`, `Promise.race`, and `Promise.any`. Includes examples of handling multiple asynchronous operations with different outcomes (resolved or rejected).
+
+15. **async.js**  
+    Explores asynchronous programming using `async`/`await` syntax. Includes examples of handling Promises with `await`, chaining asynchronous operations, and combining `async` functions with traditional Promise handling.
+
 ## How to Use
 
 - Open any file to explore the specific JavaScript concept it demonstrates.
