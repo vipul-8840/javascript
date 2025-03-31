@@ -58,10 +58,10 @@
 // }
 // console.log(Object.keys(student));
 // console.log(Object.values(student));
-const obj ={
-    name:"vipul",
-    age :22,
-    course :"maths"
-}
-const {name,age,course}=obj;
-console.log(name);
+// const obj ={
+//     name:"vipul",
+//     age :22,
+//     course :"maths"
+// }
+// const {name,age,course}=obj;
+// console.log(name);
