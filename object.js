@@ -65,3 +65,11 @@
 // }
 // const {name,age,course}=obj;
 // console.log(name);
+
+console.log(Math.PI);
+// Object.prototype.Math.PI = 5;
+// console.log(Math.PI);
+const obj = Object.getOwnPropertyDescriptor(Math,'PI');
+console.log(obj)
+
+
